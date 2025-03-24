@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Billetterie - Dancing Through Life</title>
+  <link rel="stylesheet" href="global-styles.css">
+</head>
+<body>
+  <div class="ticket-page">
+    <div class="ticket-header">
+      <a href="index.html" class="back-link">← Retour à l'accueil</a>
+      <h1>Billetterie</h1>
+    </div>
+
+    <div class="show-info">
+      <div class="show-poster">
+        <img src="images/apnee.png" alt="Affiche du spectacle Apnée" />
+      </div>
+
+      <div class="show-details">
+        <h2>APNÉE - La Comédie Musicale</h2>
+
+        <div class="show-dates">
+          <h3>Dates</h3>
+          <ul>
+            <li>
+              <div class="date-item">
+                <span class="date">Vendredi 30 mai 2025</span>
+                <span class="time">20h00</span>
+                <span class="status available">Places disponibles</span>
+              </div>
+            </li>
+            <li>
+              <div class="date-item">
+                <span class="date">Samedi 31 mai 2025</span>
+                <span class="time">20h00</span>
+                <span class="status available">Places disponibles</span>
+              </div>
+            </li>
+            <li>
+              <div class="date-item">
+                <span class="date">Dimanche 1er juin 2025</span>
+                <span class="time">18h00</span>
+                <span class="status available">Places disponibles</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="show-location">
+          <h3>Lieu</h3>
+          <p>MPAA Saint-Germain</p>
+          <p>4 Rue Félibien, 75006 Paris</p>
+        </div>
+
+        <div class="ticket-types">
+          <h3>Tarifs</h3>
+          <div class="ticket-type">
+            <div class="ticket-info">
+              <h4>Tarif plein</h4>
+              <p>Adultes</p>
+            </div>
+            <div class="ticket-price">23€</div>
+          </div>
+
+          <div class="ticket-type">
+            <div class="ticket-info">
+              <h4>Tarif réduit</h4>
+              <p>-18 ans et étudiant</p>
+            </div>
+            <div class="ticket-price">13€</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="ticket-button">
+      <a href="https://www.helloasso.com/associations/dancing-through-life/evenements/apnee-05-2025" class="btn ticket-submit"
+        >Réserver sur HelloAsso</a
+      >
+    </div>
+  </div>
+
+  <style>
+    .ticket-page {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      font-family: "Roboto", sans-serif; /* Apply Roboto font */
+    }
+
+    .ticket-header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-bottom: 20px;
+      color: var(--primary-color);
+      font-weight: bold;
+    }
+
+    .ticket-header h1 {
+      font-size: 2.5rem;
+      color: var(--primary-color);
+    }
+
+    .show-info {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      margin-bottom: 40px;
+    }
+
+    .show-poster {
+      flex: 1;
+      max-width: 300px;
+    }
+
+    .show-poster img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .show-details {
+      flex: 2;
+      min-width: 300px;
+    }
+
+    .show-details h2 {
+      font-size: 2rem;
+      color: var(--secondary-color);
+      margin-bottom: 20px;
+    }
+
+    .show-details h3 {
+      font-size: 1.5rem;
+      color: var(--primary-color);
+      margin: 20px 0 10px;
+    }
+
+    .show-dates ul {
+      list-style: none;
+    }
+
+    .date-item {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      padding: 10px 0;
+      border-bottom: 1px solid #eee;
+    }
+
+    .date {
+      font-weight: bold;
+      min-width: 200px;
+    }
+
+    .status {
+      padding: 3px 8px;
+      border-radius: 4px;
+      font-size: 0.9rem;
+    }
+
+    .status.available {
+      background-color: #e6f7e6;
+      color: #2e7d32;
+    }
+
+    .status.limited {
+      background-color: #fff8e1;
+      color: #ff8f00;
+    }
+
+    .status.sold-out {
+      background-color: #ffebee;
+      color: #c62828;
+    }
+
+    .ticket-types {
+      margin-top: 20px;
+    }
+
+    .ticket-type {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 0;
+      border-bottom: 1px solid #eee;
+    }
+
+    .ticket-info h4 {
+      margin: 0;
+      font-size: 1.1rem;
+    }
+
+    .ticket-info p {
+      margin: 5px 0 0;
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    .ticket-price {
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
+    .ticket-button {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .ticket-submit {
+      width: auto;
+      padding: 15px 30px;
+      font-size: 18px;
+      background-color: var(--primary-color);
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    @media (max-width: 768px) {
+      .show-info {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .form-row {
+        flex-direction: column;
+        gap: 0;
+      }
+
+      .ticket-counter {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+      }
+
+      .counter {
+        align-self: flex-end;
+      }
+    }
+  </style>
+</body>
+</html>
