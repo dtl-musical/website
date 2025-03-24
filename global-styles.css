@@ -137,3 +137,10 @@ img {
 .scroll-up:hover {
   transform: rotate(180deg) translateY(5px);
 }
+
+.used-for-spacing {
+  width: 150px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 1px;
+}
