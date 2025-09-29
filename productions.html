@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nos Spectacles</title>
+  <link rel="stylesheet" href="global-styles.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="header-top">
+      <div class="used-for-spacing">
+      </div>
+      <div class="logo">
+        <a href="/">
+          <img src="images/logo.png" alt="Dancing Through Life" />
+        </a>
+      </div>
+      <div class="ticket-button">
+        <a href="billetterie.html" class="btn">BILLETTERIE</a>
+      </div>
+    </div>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="#about">A PROPOS</a></li>
+        <li><a href="index.html#current-show">A L'AFFICHE</a></li>
+        <li><a href="productions.html">DERNIERS SPECTACLES</a></li>
+        <li><a href="#about">GALERIE</a></li>
+        <li><a href="mailto:dancingthroughlife.musical@gmail.com">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="productions-page">
+    <h2 class="section-title">NOS PRODUCTIONS</h2>
+
+    <section class="grid" aria-label="Liste des productions">
+
+      <!-- Card 1 -->
+      <article class="card" tabindex="0">
+        <div class="poster">
+          <img src="images/la_revue.png" alt="Affiche de la revue" />
+        </div>
+        <div class="ghost-shadow" aria-hidden="true"></div>
+        <div class="content">
+          <h3 class="title">La Revue</h3>
+          <p class="meta">(2023)</p>
+        </div>
+      </article>
+
+      <!-- Card 2 -->
+      <article class="card" tabindex="0">
+        <div class="poster">
+          <img src="images/alice.png" alt="Affiche de la production Alice" />
+        </div>
+        <div class="ghost-shadow" aria-hidden="true"></div>
+        <div class="content">
+          <h3 class="title">Alice</h3>
+          <p class="meta">(2024)</p>
+        </div>
+      </article>
+
+      <!-- Card 3 -->
+      <article class="card" tabindex="0">
+        <div class="poster">
+          <img src="images/apnee.png" alt="Affiche de la production Apnée" />
+        </div>
+        <div class="ghost-shadow" aria-hidden="true"></div>
+        <div class="content">
+          <h3 class="title">Apnée</h3>
+          <p class="meta">(2025)</p>
+        </div>
+      </article>
+    </section>
+
+  </div>
+
+  <style>
+
+.productions-page {
+  padding: 40px 0px;
+}
+
+/* Grid */
+.grid{display:flex; 
+  flex-wrap:wrap; 
+  justify-content:center; 
+  gap:28px; 
+  margin-top:36px;
+}
+
+@media (max-width: 480px){ .grid{grid-template-columns: repeat(2, 1fr);} }
+
+
+/* Card */
+.card{
+  background:var(--card-bg); 
+  border-radius: var(--radius); 
+  box-shadow: var(--shadow-sm); 
+  overflow:hidden; 
+  transition: transform .2s ease, 
+  box-shadow .2s ease;
+}
+.card:hover{ 
+  transform: translateY(-6px); 
+  box-shadow: var(--shadow); 
+}
+
+.poster{
+  background:#ddd; 
+  overflow:hidden;
+}
+.poster img {
+  width: auto;
+  height: auto;
+  max-height: 300px;
+  object-fit:cover; 
+  display:block;
+}
+
+
+.content{padding:16px 14px 18px; text-align:center;}
+.title{font-weight:700; margin:0 0 6px;}
+.meta{margin:0; color:var(--muted);}
+
+
+/* Small helper rule to visually align baseline under images */
+.ghost-shadow{
+  height:10px; 
+  background: radial-gradient(ellipse at center, rgba(0,0,0,.06), transparent 60%); 
+  filter: blur(4px); 
+  transform: translateY(-6px);
+}
+
+  </style>
+</body>
+</html>
