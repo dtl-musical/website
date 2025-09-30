@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dancing Through Life - Comédie Musicale</title>
+  <link rel="stylesheet" href="global-styles.css">
+
+  <!-- Favicon logo  -->
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+</head>
+<body>
+  <header class="header">
+    <div class="header-top">
+      <div class="used-for-spacing">
+      </div>
+      <div class="logo">
+        <a href="/">
+          <img src="images/logo.png" alt="Dancing Through Life" />
+        </a>
+      </div>
+      <div class="ticket-button">
+        <a href="billetterie.html" class="btn">BILLETTERIE</a>
+      </div>
+    </div>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="#about">A PROPOS</a></li>
+        <li><a href="#current-show">A L'AFFICHE</a></li>
+        <li><a href="productions.html">DERNIERS SPECTACLES</a></li>
+        <li><a href="#about">GALERIE</a></li>
+        <li><a href="mailto:dancingthroughlife.musical@gmail.com">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="banner">
+    <div class="banner-content">
+      <h1>ALICE</h1>
+      <h2>(2024)</h2>
+    </div>
+    <div class="photo-credit">© Peter Gunnar</div>
+  </section>
+
+  <section id="show" class="show">
+    <div class="show-container">
+      <div class="show-poster">
+        <img src="images/alice.png" alt="Affiche du spectacle Alice" />
+      </div>
+      <div class="show-info">
+        <div class="synopsis">
+          <p>
+            Alice est un jukebox musical contemporain qui réinvente le classique 
+            de Lewis Carroll, Alice au Pays des Merveilles. Cette version moderne 
+            plonge l'héroïne, une jeune active talentueuse, dans l'univers 
+            impitoyable du monde professionnel. 
+          </p>
+          <p>
+            Enfermée dans un duel entre deux entreprises rivales, Alice se retrouve 
+            tiraillée entre la dictature de la Reine Rouge, une dirigeante tyrannique 
+            et obsédée par la guerre contre sa concurrente, et l'apparent charisme de 
+            la Reine Blanche, directrice d'une entreprise concurrente à la façade 
+            bienveillante mais pleine de faux-semblants.
+          </p>
+          <p>
+            Alice devra naviguer à travers les intrigues et manipulations des deux 
+            entreprises, chaque reine étant prête à tout pour l'attirer de son côté. 
+            Au cœur de ce monde fantasque et coloré, où chaque personnage incarne un 
+            archétype du milieu professionnel, Alice devra faire un choix crucial. 
+          </p>
+          <p>            
+            Sa quête de vérité et d'équilibre la conduira à découvrir que, parfois, 
+            les apparences sont trompeuses et que les plus grandes déceptions 
+            viennent souvent des endroits les plus inattendus.
+          </p>
+          <p>
+            Présentée en 2024 à la MPAA Saint-Germain, cette réécriture audacieuse 
+            de l'œuvre de Carroll a rencontré un franc succès, confirmant le talent 
+            créatif de la troupe et offrant une réflexion acerbe sur le monde moderne 
+            de l'entreprise à travers une mise en scène dynamique et des reprises 
+            musicales emblématiques.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery" class="gallery">
+    <h2 class="section-title">GALERIE</h2>
+    <div class="gallery-carousel">
+      <div class="gallery-container">
+        <div class="gallery-photo">
+          <img src="images/alice-gallery-1.jpg" alt="Alice Gallery 1" />
+        </div>
+        <div class="gallery-photo">
+            <img src="images/alice-gallery-3.jpg" alt="Alice Gallery 3" />
+        </div>
+        <div class="gallery-photo">
+            <img src="images/alice-gallery-4.jpg" alt="Alice Gallery 4" />
+        </div>
+        <div class="gallery-photo">
+            <img src="images/alice-gallery-5.jpg" alt="Alice Gallery 5" />
+        </div>
+
+        <!-- temporarily remove pictures which don't have the same dimensions as the others
+        <div class="gallery-photo">
+          <img src="images/alice-gallery-2.jpg" alt="Alice Gallery 2" />
+        </div>
+        <div class="gallery-photo">
+          <img src="images/alice-gallery-6.jpg" alt="Alice Gallery 6" />
+        </div>
+        -->
+      </div>
+    </div>
+  </section>
+
+    <style>
+
+    .banner {
+        position: relative;
+        height: 60vh;
+        background: url('images/alice-banner.jpg') center/cover no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        text-align: center;
+    }
+
+    .banner::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5); /* Overlay for better text visibility */
+        z-index: 1;
+    }
+
+    .banner-content {
+        position: relative;
+        z-index: 2;
+    }
+
+    .banner h1 {
+        font-size: 3rem;
+        margin-bottom: 20px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    /* Photo credits styles */
+    .photo-credit {
+        position: absolute;
+        bottom: 8px;
+        right: 8px;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        font-size: 10px;
+        padding: 2px 4px;
+        border-radius: 2px;
+        font-family: "Roboto", sans-serif;
+        z-index: 10;
+    }
+
+    .banner .photo-credit {
+        z-index: 3;
+    }
+
+    .show {
+      padding: 60px 0;
+      background-color: var(--background-light);
+      text-align: center;
+      font-family: "Roboto", sans-serif; /* Apply Roboto font */
+    }
+
+    .show-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center; /* Center items vertically */
+      gap: 40px;
+      margin: 40px 0;
+    }
+
+    .show-poster {
+      flex: 1;
+      max-width: 500px;
+      position: relative;
+      display: flex;
+      align-items: center; /* Center content vertically */
+    }
+
+    .show-poster img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .show-info {
+      flex: 1;
+      max-width: 600px;
+      text-align: left;
+      padding: 20px;
+    }
+
+    .show-title {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: var(--secondary-color);
+    }
+
+    .synopsis {
+      margin-bottom: 30px;
+    }
+
+    .synopsis p {
+      margin-bottom: 15px;
+    }
+
+    .gallery {
+        padding: 60px 0;
+        background-color: var(--background-light);
+        border-top: 1px solid #eee;
+        font-family: "Roboto", sans-serif; /* Apply Roboto font */
+    }
+
+  .gallery-carousel {
+    overflow: hidden;
+    position: relative;
+  }
+
+  .gallery-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 40px 0;
+  }
+
+  .gallery-photo {
+      flex: 1;
+      max-height: 300px;
+      max-width: 500px;
+      position: relative;
+      display: flex;
+      align-items: center; /* Center content vertically */
+  }
+
+  .gallery-photo img {
+    max-height: 100%;
+    width: auto;
+    transition: filter 0.3s ease;
+  }
+
+  .gallery-photo:hover img {
+    filter: grayscale(0%);
+  }
+    
+    </style>
+
+
+</body>
+</html>
+
