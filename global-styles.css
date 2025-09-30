@@ -190,3 +190,20 @@ img {
 .main-nav a:hover {
   color: var(--accent-color);
 }
+
+@media (max-width: 768px) {
+  .header-top {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .main-nav ul {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+}
