@@ -90,15 +90,13 @@
 }
 
 /* Grid */
-.grid{display:flex; 
+.grid{
+  display:flex; 
   flex-wrap:wrap; 
   justify-content:center; 
   gap:28px; 
   margin-top:36px;
 }
-
-@media (max-width: 480px){ .grid{grid-template-columns: repeat(2, 1fr);} }
-
 
 /* Card */
 .card{
@@ -119,8 +117,6 @@
   overflow:hidden;
 }
 .poster img {
-  width: auto;
-  height: auto;
   max-height: 300px;
   object-fit:cover; 
   display:block;
