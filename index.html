@@ -5,6 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dancing Through Life - Comédie Musicale</title>
   <link rel="stylesheet" href="global-styles.css">
+
+  <!-- Favicon logo  -->
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+
 </head>
 <body>
   <header class="header">
@@ -24,7 +31,7 @@
       <ul>
         <li><a href="#about">A PROPOS</a></li>
         <li><a href="#current-show">A L'AFFICHE</a></li>
-        <li><a href="#current-show">DERNIERS SPECTACLES</a></li>
+        <li><a href="productions.html">DERNIERS SPECTACLES</a></li>
         <li><a href="#about">GALERIE</a></li>
         <li><a href="mailto:dancingthroughlife.musical@gmail.com">CONTACT</a></li>
       </ul>
@@ -42,7 +49,7 @@
     <h2 class="section-title">A LA UNE</h2>
     <div class="show-container">
       <div class="show-poster">
-        <img src="images/apnee.png" alt="Affiche du spectacle Apnée" />
+        <img src="images/apnee.jpg" alt="Affiche du spectacle Apnée" />
       </div>
       <div class="show-info">
         <h2 class="show-title">SYNOPSIS</h2>
@@ -79,7 +86,6 @@
   <section id="practical-info" class="practical-info">
     <div class="info-container">
       <div class="info-content">
-        <h3 class="info-subtitle">COMMENT VIBRER AVEC NOUS?</h3>
 
         <div class="info-block">
           <h4>QUAND ?</h4>
@@ -125,8 +131,10 @@
             </div>
           </div>
         </div>
+      </div>
 
-        <div class="map-container">
+      <div class="map-container">
+        <div class="map-block">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2625.3183612989146!2d2.3340173765964916!3d48.85213930114608!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e671d96f020267%3A0x60b86cf1e8d6170f!2sMPAA%2FSaint-Germain!5e0!3m2!1sfr!2sfr!4v1740963242954!5m2!1sfr!2sfr"
             width="100%"
@@ -150,10 +158,10 @@
       <div class="about-item">
         <div class="about-image">
           <div class="image-container">
-            <img src="images/troupe.png" alt="Photo du spectacle" />
+            <img src="images/troupe.jpg" alt="Photo du spectacle" />
             <div class="photo-credit">© Peter Gunnar</div>
           </div>
-          <a href="#" class="about-link">LA DTL, SON HISTOIRE</a>
+          <a href="productions.html" class="about-link">LA DTL, SON HISTOIRE</a>
         </div>
         <div class="about-text">
           <p>
@@ -166,7 +174,7 @@
 
       <div class="about-item">
         <div class="about-image">
-          <img src="images/lecture-script.png" alt="Photo de l'équipe" />
+          <img src="images/lecture-script.jpg" alt="Photo de l'équipe" />
           <a href="#" class="about-link">LA TROUPE</a>
         </div>
         <div class="about-text">
@@ -186,7 +194,7 @@
 
   <div class="image-container">
     <img
-      src="images/guerre-alice.png"
+      src="images/guerre-alice.jpg"
       alt="Guerre Alice"
       class="full-width-image"
     />
@@ -284,53 +292,10 @@
   </a>
 
   <style>
-    .header {
-      background-color: var(--primary-color);
-      color: var(--light-text);
-      padding: 20px 10%; /* Add 10% padding on the X-axis */
-      font-family: "Roboto", sans-serif; /* Apply Roboto font */
-    }
-
-    .header-top {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 20px;
-    }
-
-    .search-icon {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      cursor: pointer;
-    }
-
-    .logo img {
-      max-height: 60px;
-    }
-
-    .main-nav ul {
-      display: flex;
-      justify-content: space-between; /* Space between sections */
-      list-style: none;
-      gap: 40px;
-      border-top: 1px solid var(--accent-color); /* Single yellow line above sections */
-      padding: 15px 0;
-    }
-
-    .main-nav a {
-      color: var(--light-text);
-      font-weight: 700;
-      transition: color 0.3s ease;
-    }
-
-    .main-nav a:hover {
-      color: var(--accent-color);
-    }
 
     .hero {
       height: 50vh;
-      background-image: url("images/croquet.png");
+      background-image: url("images/croquet.jpg");
       background-size: cover;
       background-position: center;
       display: flex;
@@ -421,15 +386,21 @@
     }
 
     .info-container {
-      max-width: 1000px;
-      margin: 0 auto;
-      padding: 0 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center; /* Center items vertically */
+      margin: 0px 0;
     }
 
     .info-subtitle {
       font-size: 2rem;
       text-align: center;
       margin-bottom: 40px;
+    }
+
+    .info-content {
+      margin: 40px 40px;
     }
 
     .info-block {
@@ -444,10 +415,6 @@
     }
 
     .transport-info {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
-      gap: 20px;
       margin: 40px 0;
     }
 
@@ -466,10 +433,17 @@
       padding: 5px;
     }
 
-    .map-container {
-      margin: 40px 0;
+    .map-block {
+      margin: 40px 40px;
       border-radius: 10px;
       overflow: hidden;
+    }
+
+    .map-container {
+      flex: 1;
+      min-width: 300px;
+      max-width: 800px;
+      margin: 0 0;
     }
 
     .cta-button {
@@ -603,10 +577,6 @@
     .about-container {
       flex-direction: column;
       align-items: center;
-    }
-
-    .transport-info {
-      flex-direction: column;
     }
 
     .partners-container {
