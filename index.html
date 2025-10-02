@@ -38,8 +38,8 @@
     </nav>
   </header>
 
-  <section class="hero">
-    <div class="hero-content">
+  <section class="banner">
+    <div class="banner-content">
       <h1>EXPLOREZ L'UNIVERS DE<br />DANCING THROUGH LIFE</h1>
     </div>
     <div class="photo-credit">© Peter Gunnar</div>
@@ -293,8 +293,8 @@
 
   <style>
 
-    .hero {
-      height: 50vh;
+    .banner {
+      min-height: 30vw;
       background-image: url("images/croquet.jpg");
       background-size: cover;
       background-position: center;
@@ -307,17 +307,17 @@
       font-family: "Roboto", sans-serif; /* Apply Roboto font */
     }
 
-    .hero-content {
+    .banner-content {
       z-index: 2;
     }
 
-    .hero h1 {
+    .banner h1 {
       font-size: 3rem;
       margin-bottom: 20px;
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     }
 
-    .hero::after {
+    .banner::after {
       content: "";
       position: absolute;
       top: 0;
@@ -569,7 +569,7 @@
       text-align: center;
     }
 
-    .hero h1 {
+    .banner h1 {
       font-size: 2rem;
     }
 
@@ -686,7 +686,7 @@
     z-index: 10;
   }
 
-  .hero .photo-credit {
+  .banner .photo-credit {
     z-index: 3;
   }
 
