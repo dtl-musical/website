@@ -1,0 +1,108 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import DonationButton from '../components/DonationButton.astro';
+import '../styles/show.css';
+---
+
+<BaseLayout title="Apnée - Dancing Through Life">
+  <Header />
+  <section class="banner" style="background-image: url('images/apnee-banner.jpg')">
+    <div class="banner-content">
+      <h1>APNEE</h1>
+      <h2>(2025)</h2>
+    </div>
+    <div class="photo-credit">© Peter Gunnar</div>
+  </section>
+
+  <section id="show" class="show">
+    <div class="show-container">
+      <div class="show-poster">
+        <img src="images/apnee.jpg" alt="Affiche du spectacle Apnée" />
+      </div>
+      <div class="show-info">
+        <div class="synopsis">
+          <p>
+            Lorsque Lili et Émilie ont rejoint l'une des universités les plus
+            prestigieuses, elles étaient loin de se douter que l'amour viendrait
+            bouleverser leur parcours. Mais peut-on toujours être sûr que ce que
+            l'on nomme « amour » en est réellement un ?
+          </p>
+          <p>
+            Au rythme effréné de la vie universitaire, amitiés naissantes, nuits
+            festives et premiers grands choix de l'âge adulte, les deux protagonistes
+            devront trouver le courage de ne pas s'oublier.
+          </p>
+          <p>
+            Entre moments de joie, doutes et drames, une chose reste constante :
+            la musique, qui révèle ce que les mots n'osent pas dire.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="distribution" class="distribution">
+    <h2 class="section-title">DISTRIBUTION</h2>
+    <div class="distribution-content">
+      <div class="distribution-text">
+        <p><strong>Sur scène :</strong> Lucie Clemot, Marianne Clary, Teva Pouillet,
+          Maxime Archambault, Faustine Malatray, Naoufal Alami Hassani, Juliette Ferragu,
+          Achille Huet, Sophie Lejeune, Pauline Fredouelle Volokh, Yanis Trouyet,
+          Mehdi Reuillon, Gautier Creutzer, Elise Desbordes, Elise Devey, Anaëlle Breton,
+          Hugo Goasdoué, Suzanne Martin, Lisa Mollo, Alix Planchon, Iona Serquin,
+          Valentine Derue, Floriane Dieuleveut, Martha Dro, Claire Helaine, Mario Liere,
+          Fanny Mathieu, Freddy Phung et Yassine Terrab</p>
+        <br />
+        <p><strong>Orchestre :</strong> Alexandre Dareau, Jean Renaud, Gabriel Villaret
+          et Bruno Ximenez</p>
+        <br />
+        <p><strong>Livret et direction artistique :</strong> Marine De Backer</p>
+        <p><strong>Mise en scène :</strong> Marine De Backer et Alexandre Pierre</p>
+        <p><strong>Direction musicale :</strong> Guillaume Villaret<br />
+          avec le soutien de Sarah Baranes, Hugo Borsoni, Lucie Clemot, Claire Helaine,
+          Achille Huet, Lisa Mollo et Freddy Phung</p>
+        <p><strong>Chorégraphies :</strong> Armel Chausse et Mathilde Lavanant<br />
+          avec le soutien d'Anaëlle Breton, Hugo Goasdoué et Pauline Fredouelle Volokh</p>
+        <p><strong>Décors et Costumes :</strong> Aloïs Deconinck, Marie Lejeune, Alix Lesaulnier, Faustine Malatray, Alix Planchon et Tanguy Olympie</p>
+        <p><strong>Lumières :</strong> Marine De Backer, Alexandre Pierre et Nina Bouvier Renaud</p>
+        <p><strong>Communication :</strong> Lucie Clemot, Marianne Clary, Martha Dro, Pauline Fredouelle Volokh, Lisa Mollo, Teva Pouillet et Iona Serquin</p>
+        <br />
+        <p><strong>Bureau :</strong><br />
+          Président : Gautier Creutzer<br />
+          Vice-présidente : Sarah Baranes<br />
+          Secrétaire Générale : Sophie Lejeune<br />
+          Trésorier : Adrien Gourmellet<br />
+          Vice-trésorière : Fanny Mathieu</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery" class="gallery">
+    <h2 class="section-title">GALERIE</h2>
+    <div class="gallery-carousel">
+      <div class="gallery-container">
+        <div class="gallery-photo">
+          <img src="images/apnee-gallery-1.jpg" alt="Apnée Gallery 1" />
+          <div class="photo-credit">© Peter Gunnar</div>
+        </div>
+        <div class="gallery-photo">
+          <img src="images/apnee-gallery-2.jpg" alt="Apnée Gallery 2" />
+          <div class="photo-credit">© Peter Gunnar</div>
+        </div>
+        <div class="gallery-photo">
+          <img src="images/apnee-gallery-3.jpg" alt="Apnée Gallery 3" />
+          <div class="photo-credit">© Peter Gunnar</div>
+        </div>
+        <div class="gallery-photo">
+          <img src="images/apnee-gallery-5.jpg" alt="Apnée Gallery 5" />
+          <div class="photo-credit">© Peter Gunnar</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <Footer />
+  <DonationButton />
+</BaseLayout>

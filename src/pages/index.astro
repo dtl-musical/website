@@ -1,0 +1,194 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import DonationButton from '../components/DonationButton.astro';
+import ScrollArrow from '../components/ScrollArrow.astro';
+import '../styles/index.css';
+---
+
+<BaseLayout title="Dancing Through Life - Comédie Musicale">
+  <Header />
+
+  <section class="banner">
+    <div class="banner-content">
+      <h1>EXPLOREZ L'UNIVERS DE<br />DANCING THROUGH LIFE</h1>
+    </div>
+    <div class="photo-credit">© Peter Gunnar</div>
+  </section>
+
+  <section id="current-show" class="current-show">
+    <h2 class="section-title">A LA UNE</h2>
+    <div class="show-container">
+      <div class="show-poster">
+        <img src="images/apnee.jpg" alt="Affiche du spectacle Apnée" />
+      </div>
+      <div class="show-info">
+        <h2 class="show-title">SYNOPSIS</h2>
+        <div class="synopsis">
+          <p>
+            "Apnée" plonge dans l'histoire croisée de deux jeunes femmes,
+            confrontées à des relations toxiques et des épreuves de la vie
+            adulte.
+          </p>
+          <p>
+            La première, une étudiante brillante, se trouve piégée dans une
+            relation oppressante avec Gabriel, un camarade de classe, tandis que
+            la seconde, plus âgée, lutte pour se reconstruire après un passé
+            similaire.
+          </p>
+          <p>
+            Entre amitiés, rebondissements et confrontations, ces deux parcours
+            s'entrelacent au rythme d'une comédie musicale poignante qui explore
+            l'amour, l'émancipation et la quête de soi à travers les défis de
+            l'âge adulte."
+          </p>
+        </div>
+        <div class="cta-button">
+          <a href="billetterie.html" class="btn">RESERVEZ VOS PLACES</a>
+        </div>
+      </div>
+    </div>
+    <ScrollArrow href="#practical-info" direction="down" alt="Voir les informations pratiques" />
+  </section>
+
+  <h2 class="section-title">INFORMATIONS PRATIQUES</h2>
+  <section id="practical-info" class="practical-info">
+    <div class="info-container">
+      <div class="info-content">
+        <div class="info-block">
+          <h4>QUAND ?</h4>
+          <p>Samedi 4 octobre à 20h et Dimanche 5 octobre à 16h</p>
+        </div>
+
+        <div class="info-block">
+          <h4>ADRESSE</h4>
+          <p>MPAA Saint-Germain</p>
+          <p>4 Rue Félibien</p>
+          <p>75006 Paris</p>
+          <p>France</p>
+        </div>
+
+        <div class="transport-info">
+          <div class="transport-item">
+            <img src="images/metro.png" alt="Métro" class="transport-icon" />
+            <div>
+              <p><strong>Mabillon (Ligne 10)</strong> - 5 min</p>
+              <p><strong>Odéon (Lignes 4 et 10)</strong> - 7 min</p>
+              <p><strong>Saint-Germain-des-Prés (Ligne 4)</strong> - 8 min</p>
+            </div>
+          </div>
+
+          <div class="transport-item">
+            <img src="images/bus.png" alt="Bus" class="transport-icon" />
+            <div>
+              <p>
+                <strong>Saint-Germain-des-Prés (63, 86, 87)</strong> - 5 min
+              </p>
+              <p>
+                <strong>Saint-Michel - Saint-Germain (27, 39, 95)</strong> - 7 min
+              </p>
+            </div>
+          </div>
+
+          <div class="transport-item">
+            <img src="images/rer.png" alt="RER" class="transport-icon" />
+            <div>
+              <p>
+                <strong>Saint-Michel - Notre-Dame (RER B et C)</strong> - 10 min
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="map-container">
+        <div class="map-block">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2625.3183612989146!2d2.3340173765964916!3d48.85213930114608!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e671d96f020267%3A0x60b86cf1e8d6170f!2sMPAA%2FSaint-Germain!5e0!3m2!1sfr!2sfr!4v1740963242954!5m2!1sfr!2sfr"
+            width="100%"
+            height="300"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+
+        <div class="cta-button">
+          <a href="billetterie.html" class="btn">Je prends ma place</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <h2 class="section-title">QUI SOMMES-NOUS ?</h2>
+    <div class="about-container">
+      <div class="about-item">
+        <div class="about-image">
+          <div class="image-container">
+            <img src="images/troupe.jpg" alt="Photo du spectacle" />
+            <div class="photo-credit">© Peter Gunnar</div>
+          </div>
+          <a href="productions.html" class="about-link">LA DTL, SON HISTOIRE</a>
+        </div>
+        <div class="about-text">
+          <p>
+            Dancing Through Life, fondée en 2022 par des ingénieurs de
+            CentraleSupélec, réunit une quarantaine de jeunes passionnés pour
+            créer chaque année un spectacle de comédie musicale ambitieux.
+          </p>
+        </div>
+      </div>
+
+      <div class="about-item">
+        <div class="about-image">
+          <img src="images/lecture-script.jpg" alt="Photo de l'équipe" />
+          <a href="#about" class="about-link">LA TROUPE</a>
+        </div>
+        <div class="about-text">
+          <p>
+            L'équipe artistique de Dancing Through Life, composée de bénévoles
+            passionnés, collabore chaque année pour créer un spectacle en
+            partageant des responsabilités variées, de la mise en scène à la
+            musique.
+          </p>
+        </div>
+      </div>
+    </div>
+    <ScrollArrow href="#partners" direction="down" alt="Voir la section suivante" />
+  </section>
+
+  <div class="image-container">
+    <img src="images/bows-banner.jpg" alt="Saluts de la troupe" class="full-width-image" />
+    <div class="photo-credit">© Peter Gunnar</div>
+  </div>
+
+  <section id="partners" class="partners">
+    <h2 class="section-title">ILS NOUS FONT CONFIANCE</h2>
+    <div class="partners-carousel">
+      <div class="partners-container">
+        <div class="partner">
+          <img src="images/mpaa.png" alt="MPAA" />
+        </div>
+        <div class="partner">
+          <img src="images/paris-anim.png" alt="Paris Anim'" />
+        </div>
+        <div class="partner">
+          <img src="images/3ACB.png" alt="3ACB" />
+        </div>
+        <div class="partner">
+          <img
+            src="images/paris-anim-angel-parra.png"
+            alt="Paris Anim' Centre Angel Parra"
+          />
+        </div>
+      </div>
+    </div>
+    <ScrollArrow href="#" direction="up" alt="Retour en haut" />
+  </section>
+
+  <Footer />
+  <DonationButton />
+</BaseLayout>

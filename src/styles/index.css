@@ -1,0 +1,279 @@
+.banner {
+  min-height: 20vw;
+  background-image: url("images/apnee-banner-2.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--light-text);
+  text-align: center;
+  position: relative;
+  font-family: "Roboto", sans-serif;
+}
+
+.banner-content {
+  z-index: 2;
+}
+
+.banner h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.banner::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.current-show {
+  padding: 60px 0;
+  background-color: var(--background-light);
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+
+.current-show .show-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin: 40px 0;
+}
+
+.current-show .show-poster {
+  flex: 1;
+  max-width: 500px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.current-show .show-poster img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.current-show .show-info {
+  flex: 1;
+  max-width: 600px;
+  text-align: left;
+  padding: 20px;
+}
+
+.current-show .show-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: var(--secondary-color);
+}
+
+.current-show .synopsis {
+  margin-bottom: 30px;
+}
+
+.current-show .synopsis p {
+  margin-bottom: 15px;
+}
+
+.practical-info {
+  padding: 60px 0;
+  background-color: var(--background-dark);
+  color: var(--light-text);
+  font-family: "Roboto", sans-serif;
+}
+
+.info-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.info-subtitle {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.info-content {
+  margin: 40px;
+}
+
+.info-block {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.info-block h4 {
+  font-size: 1.5rem;
+  color: var(--accent-color);
+  margin-bottom: 10px;
+}
+
+.transport-info {
+  margin: 40px 0;
+}
+
+.transport-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.transport-icon {
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.map-block {
+  margin: 40px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.map-container {
+  flex: 1;
+  min-width: 300px;
+  max-width: 800px;
+  margin: 0;
+}
+
+.cta-button {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.about {
+  padding: 60px 0;
+  background-color: var(--background-light);
+  font-family: "Roboto", sans-serif;
+}
+
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin: 40px 0;
+}
+
+.about-item {
+  flex: 1;
+  min-width: 300px;
+  max-width: 600px;
+}
+
+.about-image {
+  position: relative;
+  margin-bottom: 20px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.about-image img {
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+
+.about-image:hover img {
+  transform: scale(1.05);
+}
+
+.about-link {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background-color: var(--primary-color);
+  color: var(--light-text);
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+
+.about-link:hover {
+  background-color: var(--accent-color);
+  color: var(--secondary-color);
+}
+
+.about-text {
+  text-align: center;
+  padding: 0 20px;
+}
+
+.partners {
+  padding: 60px 0;
+  background-color: var(--background-light);
+  border-top: 1px solid #eee;
+  font-family: "Roboto", sans-serif;
+}
+
+.partners-carousel {
+  overflow: hidden;
+  position: relative;
+}
+
+.partners-container {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin: 40px 0;
+}
+
+.partner {
+  flex: 0 0 auto;
+  min-width: 200px;
+  max-width: 250px;
+  padding: 20px;
+  text-align: center;
+}
+
+.partner img {
+  max-width: 100%;
+  height: auto;
+  transition: filter 0.3s ease;
+}
+
+.partner:hover img {
+  filter: grayscale(0%);
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@media (max-width: 768px) {
+  .banner h1 {
+    font-size: 2rem;
+  }
+
+  .current-show .show-container,
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .partners-container {
+    animation: scroll 20s linear infinite;
+  }
+}

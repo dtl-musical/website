@@ -1,0 +1,57 @@
+.productions-page {
+  padding: 40px 0;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 28px;
+  margin-top: 36px;
+}
+
+.card {
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow);
+}
+
+.poster {
+  background: #ddd;
+  overflow: hidden;
+}
+
+.poster img {
+  max-height: 300px;
+  object-fit: cover;
+  display: block;
+}
+
+.content {
+  padding: 16px 14px 18px;
+  text-align: center;
+}
+
+.title {
+  font-weight: 700;
+  margin: 0 0 6px;
+}
+
+.meta {
+  margin: 0;
+  color: var(--muted);
+}
+
+.ghost-shadow {
+  height: 10px;
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.06), transparent 60%);
+  filter: blur(4px);
+  transform: translateY(-6px);
+}
