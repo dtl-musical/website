@@ -1,0 +1,28 @@
+---
+interface Props {
+  title: string;
+  year: string;
+  poster: string;
+  posterAlt: string;
+  href?: string;
+}
+
+const { title, year, poster, posterAlt, href } = Astro.props;
+---
+
+<article class="card" tabindex="0">
+  {href ? (
+    <a class="poster" href={href}>
+      <img src={poster} alt={posterAlt} />
+    </a>
+  ) : (
+    <div class="poster">
+      <img src={poster} alt={posterAlt} />
+    </div>
+  )}
+  <div class="ghost-shadow" aria-hidden="true"></div>
+  <div class="content">
+    <h3 class="title">{title}</h3>
+    <p class="meta">({year})</p>
+  </div>
+</article>

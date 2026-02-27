@@ -2,6 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import ShowCard from '../components/show/ShowCard.astro';
 import '../styles/productions.css';
 ---
 
@@ -11,38 +12,9 @@ import '../styles/productions.css';
     <h2 class="section-title">NOS PRODUCTIONS</h2>
 
     <section class="grid" aria-label="Liste des productions">
-      <article class="card" tabindex="0">
-        <div class="poster">
-          <img src="images/la_revue.png" alt="Affiche de la revue" />
-        </div>
-        <div class="ghost-shadow" aria-hidden="true"></div>
-        <div class="content">
-          <h3 class="title">La Revue</h3>
-          <p class="meta">(2023)</p>
-        </div>
-      </article>
-
-      <article class="card" tabindex="0">
-        <a class="poster" href="alice.html">
-          <img src="images/alice.png" alt="Affiche de la production Alice" />
-        </a>
-        <div class="ghost-shadow" aria-hidden="true"></div>
-        <div class="content">
-          <h3 class="title">Alice</h3>
-          <p class="meta">(2024)</p>
-        </div>
-      </article>
-
-      <article class="card" tabindex="0">
-        <a class="poster" href="apnee.html">
-          <img src="images/apnee.jpg" alt="Affiche de la production Apnée" />
-        </a>
-        <div class="ghost-shadow" aria-hidden="true"></div>
-        <div class="content">
-          <h3 class="title">Apnée</h3>
-          <p class="meta">(2025)</p>
-        </div>
-      </article>
+      <ShowCard title="La Revue" year="2023" poster="images/la_revue.png" posterAlt="Affiche de la revue" />
+      <ShowCard title="Alice" year="2024" poster="images/alice.png" posterAlt="Affiche de la production Alice" href="alice.html" />
+      <ShowCard title="Apnée" year="2025" poster="images/apnee.jpg" posterAlt="Affiche de la production Apnée" href="apnee.html" />
     </section>
   </div>
   <Footer />
