@@ -1,0 +1,66 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import '../styles/billetterie.css';
+---
+
+<BaseLayout title="Billetterie - Dancing Through Life">
+  <div class="ticket-page">
+    <div class="ticket-header">
+      <a href="index.html" class="back-link">← Retour à l'accueil</a>
+      <h1>Billetterie</h1>
+    </div>
+
+    <div class="show-info">
+      <div class="show-poster">
+        <img src="images/apnee.jpg" alt="Affiche du spectacle Apnée" />
+      </div>
+
+      <div class="show-details">
+        <h2>APNÉE - La Comédie Musicale</h2>
+
+        <div class="show-dates">
+          <h3>Dates</h3>
+          <ul>
+            <li>
+              <div class="date-item">
+                <span class="date">Samedi 4 octobre 2025</span>
+                <span class="time">20h00</span>
+                <span class="status available">Places disponibles</span>
+              </div>
+            </li>
+            <li>
+              <div class="date-item">
+                <span class="date">Dimanche 5 octobre 2025</span>
+                <span class="time">16h00</span>
+                <span class="status available">Places disponibles</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="show-location">
+          <h3>Lieu</h3>
+          <p>MPAA Saint-Germain</p>
+          <p>4 Rue Félibien, 75006 Paris</p>
+        </div>
+
+        <div class="ticket-types">
+          <h3>Tarifs</h3>
+          <div class="ticket-type">
+            <div class="ticket-info">
+              <h4>Prix libre</h4>
+              <p>À partir de 5€</p>
+            </div>
+            <div class="ticket-price">5€+</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="ticket-button">
+      <a href="https://mpaa.prod.e-bizproduction.com/programmation/apnee" class="btn ticket-submit">
+        Réserver sur le site de la MPAA
+      </a>
+    </div>
+  </div>
+</BaseLayout>

@@ -1,0 +1,21 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import ShowCard from '../components/show/ShowCard.astro';
+import '../styles/productions.css';
+---
+
+<BaseLayout title="Nos Spectacles">
+  <Header />
+  <div class="productions-page">
+    <h2 class="section-title">NOS PRODUCTIONS</h2>
+
+    <section class="grid" aria-label="Liste des productions">
+      <ShowCard title="La Revue" year="2023" poster="images/la_revue.png" posterAlt="Affiche de la revue" href="la_revue.html" />
+      <ShowCard title="Alice" year="2024" poster="images/alice.png" posterAlt="Affiche de la production Alice" href="alice.html" />
+      <ShowCard title="Apnée" year="2025" poster="images/apnee.jpg" posterAlt="Affiche de la production Apnée" href="apnee.html" />
+    </section>
+  </div>
+  <Footer />
+</BaseLayout>

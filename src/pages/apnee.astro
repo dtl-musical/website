@@ -1,0 +1,69 @@
+---
+import ShowLayout from '../layouts/ShowLayout.astro';
+import ShowBanner from '../components/show/ShowBanner.astro';
+import ShowSynopsis from '../components/show/ShowSynopsis.astro';
+import ShowDistribution from '../components/show/ShowDistribution.astro';
+import ShowGallery from '../components/show/ShowGallery.astro';
+
+const galleryPhotos = [
+  { src: "images/apnee-gallery-1.jpg", alt: "Apnée Gallery 1", credit: "© Peter Gunnar" },
+  { src: "images/apnee-gallery-2.jpg", alt: "Apnée Gallery 2", credit: "© Peter Gunnar" },
+  { src: "images/apnee-gallery-3.jpg", alt: "Apnée Gallery 3", credit: "© Peter Gunnar" },
+  { src: "images/apnee-gallery-5.jpg", alt: "Apnée Gallery 5", credit: "© Peter Gunnar" },
+];
+---
+
+<ShowLayout title="Apnée - Dancing Through Life">
+  <ShowBanner image="images/apnee-banner.jpg" title="APNEE" year="2025" credit="© Peter Gunnar" />
+
+  <ShowSynopsis poster="images/apnee.jpg" posterAlt="Affiche du spectacle Apnée">
+    <p>
+      Lorsque Lili et Émilie ont rejoint l'une des universités les plus
+      prestigieuses, elles étaient loin de se douter que l'amour viendrait
+      bouleverser leur parcours. Mais peut-on toujours être sûr que ce que
+      l'on nomme « amour » en est réellement un ?
+    </p>
+    <p>
+      Au rythme effréné de la vie universitaire, amitiés naissantes, nuits
+      festives et premiers grands choix de l'âge adulte, les deux protagonistes
+      devront trouver le courage de ne pas s'oublier.
+    </p>
+    <p>
+      Entre moments de joie, doutes et drames, une chose reste constante :
+      la musique, qui révèle ce que les mots n'osent pas dire.
+    </p>
+  </ShowSynopsis>
+
+  <ShowDistribution>
+    <p><strong>Sur scène :</strong> Lucie Clemot, Marianne Clary, Teva Pouillet,
+      Maxime Archambault, Faustine Malatray, Naoufal Alami Hassani, Juliette Ferragu,
+      Achille Huet, Sophie Lejeune, Pauline Fredouelle Volokh, Yanis Trouyet,
+      Mehdi Reuillon, Gautier Creutzer, Elise Desbordes, Elise Devey, Anaëlle Breton,
+      Hugo Goasdoué, Suzanne Martin, Lisa Mollo, Alix Planchon, Iona Serquin,
+      Valentine Derue, Floriane Dieuleveut, Martha Dro, Claire Helaine, Mario Liere,
+      Fanny Mathieu, Freddy Phung et Yassine Terrab</p>
+    <br />
+    <p><strong>Orchestre :</strong> Alexandre Dareau, Jean Renaud, Gabriel Villaret
+      et Bruno Ximenez</p>
+    <br />
+    <p><strong>Livret et direction artistique :</strong> Marine De Backer</p>
+    <p><strong>Mise en scène :</strong> Marine De Backer et Alexandre Pierre</p>
+    <p><strong>Direction musicale :</strong> Guillaume Villaret<br />
+      avec le soutien de Sarah Baranes, Hugo Borsoni, Lucie Clemot, Claire Helaine,
+      Achille Huet, Lisa Mollo et Freddy Phung</p>
+    <p><strong>Chorégraphies :</strong> Armel Chausse et Mathilde Lavanant<br />
+      avec le soutien d'Anaëlle Breton, Hugo Goasdoué et Pauline Fredouelle Volokh</p>
+    <p><strong>Décors et Costumes :</strong> Aloïs Deconinck, Marie Lejeune, Alix Lesaulnier, Faustine Malatray, Alix Planchon et Tanguy Olympie</p>
+    <p><strong>Lumières :</strong> Marine De Backer, Alexandre Pierre et Nina Bouvier Renaud</p>
+    <p><strong>Communication :</strong> Lucie Clemot, Marianne Clary, Martha Dro, Pauline Fredouelle Volokh, Lisa Mollo, Teva Pouillet et Iona Serquin</p>
+    <br />
+    <p><strong>Bureau :</strong><br />
+      Président : Gautier Creutzer<br />
+      Vice-présidente : Sarah Baranes<br />
+      Secrétaire Générale : Sophie Lejeune<br />
+      Trésorier : Adrien Gourmellet<br />
+      Vice-trésorière : Fanny Mathieu</p>
+  </ShowDistribution>
+
+  <ShowGallery photos={galleryPhotos} />
+</ShowLayout>

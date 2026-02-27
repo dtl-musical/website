@@ -1,0 +1,145 @@
+.ticket-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: "Roboto", sans-serif;
+}
+
+.ticket-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.ticket-header h1 {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+}
+
+.ticket-page .show-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.ticket-page .show-poster {
+  flex: 1;
+  max-width: 300px;
+}
+
+.ticket-page .show-poster img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.show-details {
+  flex: 2;
+  min-width: 300px;
+}
+
+.show-details h2 {
+  font-size: 2rem;
+  color: var(--secondary-color);
+  margin-bottom: 20px;
+}
+
+.show-details h3 {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  margin: 20px 0 10px;
+}
+
+.show-dates ul {
+  list-style: none;
+}
+
+.date-item {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.date {
+  font-weight: bold;
+  min-width: 200px;
+}
+
+.status {
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+.status.available {
+  background-color: #e6f7e6;
+  color: #2e7d32;
+}
+
+.status.limited {
+  background-color: #fff8e1;
+  color: #ff8f00;
+}
+
+.status.sold-out {
+  background-color: #ffebee;
+  color: #c62828;
+}
+
+.ticket-types {
+  margin-top: 20px;
+}
+
+.ticket-type {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.ticket-info h4 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.ticket-info p {
+  margin: 5px 0 0;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.ticket-price {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.ticket-page .ticket-button {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.ticket-submit {
+  width: auto;
+  padding: 15px 30px;
+  font-size: 18px;
+  background-color: var(--primary-color);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .ticket-page .show-info {
+    flex-direction: column;
+    align-items: center;
+  }
+}

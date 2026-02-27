@@ -1,0 +1,15 @@
+---
+interface Props {
+  href: string;
+  direction: 'up' | 'down';
+  alt: string;
+}
+
+const { href, direction, alt } = Astro.props;
+const arrowImg = direction === 'up' ? 'images/up-arrow.svg' : 'images/down-arrow.svg';
+const extraClass = direction === 'up' ? ' scroll-up' : '';
+---
+
+<a href={href} class={`scroll-arrow${extraClass}`}>
+  <img src={arrowImg} alt={alt} />
+</a>

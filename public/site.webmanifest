@@ -1,0 +1,14 @@
+{
+  "name": "Dancing Through Life",
+  "short_name": "DTL",
+  "description": "Comédie Musicale - Dancing Through Life",
+  "start_url": "index.html",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "images/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}
