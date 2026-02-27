@@ -1,0 +1,27 @@
+---
+interface Photo {
+  src: string;
+  alt: string;
+  credit?: string;
+}
+
+interface Props {
+  photos: Photo[];
+}
+
+const { photos } = Astro.props;
+---
+
+<section id="gallery" class="gallery">
+  <h2 class="section-title">GALERIE</h2>
+  <div class="gallery-carousel">
+    <div class="gallery-container">
+      {photos.map((photo) => (
+        <div class="gallery-photo">
+          <img src={photo.src} alt={photo.alt} />
+          {photo.credit && <div class="photo-credit">{photo.credit}</div>}
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

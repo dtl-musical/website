@@ -1,0 +1,21 @@
+---
+interface Props {
+  poster: string;
+  posterAlt: string;
+}
+
+const { poster, posterAlt } = Astro.props;
+---
+
+<section id="show" class="show">
+  <div class="show-container">
+    <div class="show-poster">
+      <img src={poster} alt={posterAlt} />
+    </div>
+    <div class="show-info">
+      <div class="synopsis">
+        <slot />
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,18 @@
+---
+interface Props {
+  image: string;
+  title: string;
+  year: string;
+  credit?: string;
+}
+
+const { image, title, year, credit } = Astro.props;
+---
+
+<section class="banner" style={`background-image: url('${image}')`}>
+  <div class="banner-content">
+    <h1>{title}</h1>
+    <h2>({year})</h2>
+  </div>
+  {credit && <div class="photo-credit">{credit}</div>}
+</section>
