@@ -242,7 +242,7 @@
 
 .partner {
   flex: 0 0 auto;
-  min-width: 100;
+  min-width: 100px;
   max-width: 150px;
   padding: 20px;
   text-align: center;
