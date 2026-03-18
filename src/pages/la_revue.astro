@@ -1,27 +1,34 @@
 ---
 import ShowLayout from '../layouts/ShowLayout.astro';
-import ShowBanner from '../components/show/ShowBanner.astro';
+import ShowGallery from '../components/show/ShowGallery.astro';
 import ShowSynopsis from '../components/show/ShowSynopsis.astro';
 import ShowDistribution from '../components/show/ShowDistribution.astro';
 
+const galleryPhotos = [
+  { src: "images/la-revue-gallery-1.jpeg", alt: "La Revue Gallery 1", credit: "" },
+  { src: "images/la-revue-gallery-2.jpeg", alt: "La Revue Gallery 2", credit: "" },
+  { src: "images/la-revue-gallery-3.jpeg", alt: "La Revue Gallery 3", credit: "" },
+  { src: "images/la-revue-gallery-4.jpeg", alt: "La Revue Gallery 4", credit: "" },
+  { src: "images/la-revue-gallery-5.jpeg", alt: "La Revue Gallery 5", credit: "" },
+];
 ---
 
 <ShowLayout title="La Revue - Dancing Through Life">
 
   <ShowSynopsis poster="images/la_revue.png" posterAlt="Affiche du spectacle La Revue">
     <p>
-      Premier spectacle de la DTL, cette troupe de 25 artistes, metteurs et metteuses 
+      Premier spectacle de la DTL, cette troupe de 25 artistes, metteurs et metteuses
       en scène et chorégraphes, a concocté un show intense et plein de bonne humeur.
     </p>
     <p>
-      Au programme, des scènes issues de comédies musicales plus incroyables les unes 
-      que les autres : Starmania, Chicago, Moulin Rouge, Mean Girls, la Belle et la Bête, 
-      Six, Notre Dame de Paris, Wicked, Lalaland, Tick Tick Boom, Dear Evan Hansen 
+      Au programme, des scènes issues de comédies musicales plus incroyables les unes
+      que les autres : Starmania, Chicago, Moulin Rouge, Mean Girls, la Belle et la Bête,
+      Six, Notre Dame de Paris, Wicked, Lalaland, Tick Tick Boom, Dear Evan Hansen
       ou encore Grease !
     </p>
     <p>
-      Ces numéros combinant performances vocales et danse de haute voltige ont mis 
-      à l’honneur des comédies musicales d’ambiances et de styles diverses pour 
+      Ces numéros combinant performances vocales et danse de haute voltige ont mis
+      à l’honneur des comédies musicales d’ambiances et de styles diverses pour
       ravir les yeux de toutes et de tous.
     </p>
   </ShowSynopsis>
@@ -29,11 +36,11 @@ import ShowDistribution from '../components/show/ShowDistribution.astro';
   <ShowDistribution>
     <p><strong>Production :</strong> Dancing Through Life</p>
     <br />
-    <p><strong>Sur scène :</strong> Nour Allouche, Maxime Archambault, Sarah Baranes, 
-      Armel Chausse, Marianne Clary, Lucie Clemot, Gautier Creutzer, Marine De Backer, 
-      Tim Faverjon, Martin Henin, Claire Helaine, Achille Huet, Julie Lecanu, 
-      Romane Lecuyer, Sophie Lejeune, Faustine Malatray, 
-      Taha Mansour, Lisa Mollo, Teva Pouillet, Iona Serquin, Guillaume Villaret, 
+    <p><strong>Sur scène :</strong> Nour Allouche, Maxime Archambault, Sarah Baranes,
+      Armel Chausse, Marianne Clary, Lucie Clemot, Gautier Creutzer, Marine De Backer,
+      Tim Faverjon, Martin Henin, Claire Helaine, Achille Huet, Julie Lecanu,
+      Romane Lecuyer, Sophie Lejeune, Faustine Malatray, Ambre Linard-Celma,
+      Taha Mansour, Lisa Mollo, Teva Pouillet, Iona Serquin, Guillaume Villaret,
       Axel Vincent</p>
     <br />
     <p><strong>Responsables Danse :</strong> Epi Péraud, Marine De Backer, Armel Chausse</p>
@@ -45,7 +52,7 @@ import ShowDistribution from '../components/show/ShowDistribution.astro';
     <br />
     <p><strong>Décors et Costumes :</strong> Faustine Malatray, Amélie Monteiro</p>
     <br />
-    <p><strong>Conseil d'administration :</strong><br/> 
+    <p><strong>Conseil d'administration :</strong><br/>
       Marine De Backer<br />
       Max Archambault<br />
       Faustine Malatray<br />
@@ -54,5 +61,7 @@ import ShowDistribution from '../components/show/ShowDistribution.astro';
       Lucie Clémot<br />
       Marianne Clary</p>
   </ShowDistribution>
+
+  <ShowGallery photos={galleryPhotos} />
 
 </ShowLayout>

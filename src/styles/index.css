@@ -60,6 +60,11 @@
   width: 100%;
   border-radius: 10px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.current-show .show-poster:hover img {
+  transform: scale(1.02);
 }
 
 .current-show .show-info {
@@ -237,8 +242,8 @@
 
 .partner {
   flex: 0 0 auto;
-  min-width: 200px;
-  max-width: 250px;
+  min-width: 100px;
+  max-width: 150px;
   padding: 20px;
   text-align: center;
 }

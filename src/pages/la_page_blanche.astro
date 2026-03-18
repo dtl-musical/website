@@ -1,0 +1,84 @@
+---
+import ShowLayout from '../layouts/ShowLayout.astro';
+import ShowBanner from '../components/show/ShowBanner.astro';
+import ShowSynopsis from '../components/show/ShowSynopsis.astro';
+import ShowDistribution from '../components/show/ShowDistribution.astro';
+import ShowGallery from '../components/show/ShowGallery.astro';
+
+const galleryPhotos = [
+  { src: "images/la-page-blanche-troupe.jpg", alt: "La Page Blanche Troupe", credit: "© Peter Gunnar" },
+  { src: "images/la-page-blanche-gallery-1.jpeg", alt: "La Page Blanche Gallery 1", credit: "© Peter Gunnar" },
+  { src: "images/la-page-blanche-gallery-2.jpeg", alt: "La Page Blanche Gallery 2", credit: "© Peter Gunnar" },
+  // TODO: change image aspect to add vertical images to gallery
+  // { src: "images/la-page-blanche-gallery-3.jpeg", alt: "La Page Blanche Gallery 3", credit: "© Peter Gunnar" },
+];
+---
+
+<ShowLayout title="La Page Blanche - Dancing Through Life">
+  <ShowBanner image="images/la-page-blanche-banner-tmp.png" title="LA PAGE BLANCHE" year="2026" credit="" />
+
+  <ShowSynopsis poster="images/la-page-blanche-tmp.jpg" posterAlt="Affiche du spectacle La Page Blanche">
+    <p>
+      L'Auteur tient tant bien que mal dans son bateau qui prend l'eau. Il garde
+      le cap. Il s'acharne sur ce qu'il doit faire, sur ce qu'il devrait savoir
+      faire, écrire sa prochaine comédie musicale.
+    </p>
+    <p>
+      Une pièce "trop déprimante" dira le Producteur. Envahi par ses démons,
+      l'Auteur n'arrive plus qu'à écrire sa douleur. Pourtant, il était
+      lumineux avant tout ça, et ses pièces aussi....
+    </p>
+    <p>
+      Alors, comment continuer de créer dans un monde qui semble avoir perdu
+      tout son sens ?
+    </p>
+  </ShowSynopsis>
+
+  <ShowDistribution>
+    <h3>TROUPE</h3><br />
+    <p>
+      <strong>L'Auteur :</strong> Elohan Lanier<br />
+      <strong>Esmée :</strong> Juliette Ferragu<br />
+      <strong>Augustin :</strong> Freddy Phung<br />
+      <strong>L'Amie :</strong> Floriane Dieuleveut<br />
+      <strong>La Serveuse :</strong> Pauline Fredouelle-Volokh<br />
+      <strong>Le Producteur :</strong> Taha Mansour<br />
+      <strong>L'Assistante du Producteur :</strong> Elise Devey<br />
+      <strong>Serveuses :</strong> Alix Lesaulnier, Fanny Mathieux, Martha Dro, Claire Helaine<br />
+      <strong>L'Autre :</strong> Achille Huet<br />
+      <strong>Liza :</strong> Lucie Clemot<br />
+      <strong>Un Personnage :</strong> Suzanne Martin<br />
+      <strong>Choeurs et danseurs :</strong> Mario Liere, Valentine Dérue, Iona Serquin, Martin Henin, Armel Chausse, Alix Planchon<br />
+    </p>
+    <br />
+    <h3>EQUIPE ARTISTIQUE</h3><br />
+    <p>
+      <strong>Direction Artistique :</strong> Sarah Baranes<br />
+      <strong>Assistante Direction Artistique :</strong> Alix Lesaulnier<br />
+      <strong>Responsable Mise en Scène :</strong> Blanche Rivière<br />
+      <strong>Responsable Chorégraphie :</strong> Pauline Charvet<br />
+      <strong>Responsable Chant :</strong> Freddy Phung<br />
+      <strong>Chef d'Orchestre :</strong> Guillaume Villaret<br />
+      <strong>Régie Lumières :</strong> Nina Bouvier Renaud<br />
+      <strong>Coordination Décors & Costumes :</strong> Sophie Lejeune<br />
+      <br />
+      <strong>Pôle Chant :</strong> Elohan Lanier, Claire Helaine, Achille Huet, Lucie Clemot, Fanny Mathieux, Sarah Baranes, Valentine Dérue, Juliette Ferragu<br />
+      <strong>Pôle Danse :</strong> Pauline Fredouelle-Volokh, Armel Chausse<br />
+      <strong>Orchestre :</strong> Jean Renaud, Gabriel Villaret, Adrien Villaret, Victor Fournier, Louis Kelley, Camille Lançon<br />
+      <strong>Pôle Décors :</strong> Thanh-Ha Le, Alice Roux<br />
+      <strong>Pôle Costumes :</strong> Alix Planchon, Alix Lesaulnier, Margot Pouvesle, Milena Marković, Salomé Hacquet, Marie Lejeune, Cécile Charvet<br />
+    </p>
+    <br />
+    <h3>BUREAU</h3><br />
+    <p>
+      <strong>Président :</strong> Maxime Archambault<br />
+      <strong>Secrétaire Générale :</strong> Marine De Backer<br />
+      <strong>Vice-Présidente :</strong> Sophie Lejeune<br />
+      <strong>Vice-Président :</strong> Yassine Terrab<br />
+      <strong>Trésorière :</strong> Fanny Mathieux<br />
+      <strong>Vice-Trésorier :</strong> Achille Huet<br />
+    </p>
+  </ShowDistribution>
+
+  <ShowGallery photos={galleryPhotos} />
+</ShowLayout>
