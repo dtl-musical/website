@@ -237,8 +237,8 @@
 
 .partner {
   flex: 0 0 auto;
-  min-width: 200px;
-  max-width: 250px;
+  min-width: 100;
+  max-width: 150px;
   padding: 20px;
   text-align: center;
 }
