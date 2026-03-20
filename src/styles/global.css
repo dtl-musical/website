@@ -175,14 +175,14 @@
   }
   
   .logo img {
-    max-height: 60px;
+    max-height: 80px;
   }
   
   .main-nav ul {
     display: flex;
     justify-content: space-between;
     list-style: none;
-    gap: 40px;
+    gap: 200px;
     border-top: 1px solid var(--accent-color);
     padding: 15px 0;
   }
