@@ -47,12 +47,12 @@
   justify-content: center;
   align-items: center;
   gap: 40px;
-  margin: 40px 0;
+  margin: 40px 40px;
 }
 
 .show-poster {
   flex: 1;
-  max-width: 500px;
+  max-width: 400px;
   position: relative;
   display: flex;
   align-items: center;
