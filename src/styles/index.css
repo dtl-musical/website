@@ -60,6 +60,15 @@
   margin-bottom: 15px;
 }
 
+.current-show .show-buttons-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin: 40px 40px;
+}
+
 .practical-info {
   padding: 60px 0;
   background-color: var(--background-dark);
@@ -131,6 +140,7 @@
 .cta-button {
   text-align: center;
   margin: 40px 0;
+  flex: 1 1 0px;
 }
 
 .about {
