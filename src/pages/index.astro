@@ -5,6 +5,7 @@ import Footer from '../components/Footer.astro';
 import DonationButton from '../components/DonationButton.astro';
 import ScrollArrow from '../components/ScrollArrow.astro';
 import '../styles/index.css';
+import '../styles/show.css';
 ---
 
 <BaseLayout title="Dancing Through Life - Comédie Musicale">
@@ -18,10 +19,10 @@ import '../styles/index.css';
   </section>
 
   <section id="current-show" class="current-show">
-    <h2 class="section-title">LA PAGE BLANCHE</h2>
+    <h2 class="section-title">A L'AFFICHE</h2>
     <div class="show-container">
       <a class="show-poster" href="la_page_blanche.html">
-        <img src="images/la-page-blanche-tmp.jpg" alt="Affiche du spectacle La Page Blanche" />
+        <img src="images/la-page-blanche.jpg" alt="Affiche du spectacle La Page Blanche" />
       </a>
       <div class="show-info">
         <h2 class="show-title">SYNOPSIS</h2>
@@ -41,8 +42,13 @@ import '../styles/index.css';
             tout son sens ?
           </p>
         </div>
-        <div class="cta-button">
-          <a href="billetterie.html" class="btn">RESERVER VOS PLACES</a>
+        <div class="show-buttons-container">
+          <div class="cta-button">
+            <a href="billetterie.html" class="btn">BILLETTERIE</a>
+          </div>
+          <div class="cta-button">
+            <a href="la_page_blanche.html" class="btn">EN SAVOIR +</a>
+          </div>
         </div>
       </div>
     </div>
@@ -113,7 +119,7 @@ import '../styles/index.css';
         </div>
 
         <div class="cta-button">
-          <a href="billetterie.html" class="btn">Je prends ma place</a>
+          <a href="billetterie.html" class="btn">BILLETTERIE</a>
         </div>
       </div>
     </div>

@@ -4,6 +4,7 @@ import ShowBanner from '../components/show/ShowBanner.astro';
 import ShowSynopsis from '../components/show/ShowSynopsis.astro';
 import ShowDistribution from '../components/show/ShowDistribution.astro';
 import ShowGallery from '../components/show/ShowGallery.astro';
+import ShowVideo from '../components/show/ShowVideo.astro';
 
 const galleryPhotos = [
   { src: "images/apnee-gallery-1.jpg", alt: "Apnée Gallery 1", credit: "© Peter Gunnar" },
@@ -33,6 +34,8 @@ const galleryPhotos = [
       la musique, qui révèle ce que les mots n'osent pas dire.
     </p>
   </ShowSynopsis>
+
+  <ShowVideo url="https://youtube.com/embed/ScjZBHD_1ZU?si=m3yK289BL9YUTLYs" title="Apnée - Trailer" />
 
   <ShowDistribution>
     <p><strong>Sur scène :</strong> Lucie Clemot, Marianne Clary, Teva Pouillet,

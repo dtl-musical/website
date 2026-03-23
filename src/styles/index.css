@@ -1,35 +1,7 @@
 .banner {
-  min-height: 20vw;
   background-image: url("images/apnee-banner-2.jpg");
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   color: var(--light-text);
-  text-align: center;
-  position: relative;
   font-family: "Roboto", sans-serif;
-}
-
-.banner-content {
-  z-index: 2;
-}
-
-.banner h1 {
-  font-size: 3rem;
-  margin-bottom: 20px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-.banner::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .current-show {
@@ -45,12 +17,12 @@
   justify-content: center;
   align-items: center;
   gap: 40px;
-  margin: 40px 0;
+  margin: 40px 40px;
 }
 
 .current-show .show-poster {
   flex: 1;
-  max-width: 500px;
+  max-width: 400px;
   position: relative;
   display: flex;
   align-items: center;
@@ -86,6 +58,15 @@
 
 .current-show .synopsis p {
   margin-bottom: 15px;
+}
+
+.current-show .show-buttons-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin: 40px 40px;
 }
 
 .practical-info {
@@ -159,6 +140,7 @@
 .cta-button {
   text-align: center;
   margin: 40px 0;
+  flex: 1 1 0px;
 }
 
 .about {
@@ -279,6 +261,6 @@
   }
 
   .partners-container {
-    animation: scroll 20s linear infinite;
+    animation: scroll 15s linear infinite;
   }
 }
