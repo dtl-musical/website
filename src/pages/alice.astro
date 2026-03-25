@@ -7,17 +7,17 @@ import ShowDistribution from '../components/show/ShowDistribution.astro';
 import ShowGallery from '../components/show/ShowGallery.astro';
 
 const galleryPhotos = [
-  { src: "images/alice-gallery-1.jpg", alt: "Alice Gallery 1", credit: "© Peter Gunnar" },
-  { src: "images/alice-gallery-3.jpg", alt: "Alice Gallery 3", credit: "© Peter Gunnar" },
-  { src: "images/alice-gallery-4.jpg", alt: "Alice Gallery 4", credit: "© Peter Gunnar" },
-  { src: "images/alice-gallery-5.jpg", alt: "Alice Gallery 5", credit: "© Peter Gunnar" },
+  { src: "images/alice/alice-gallery-1.jpg", alt: "Alice Gallery 1", credit: "© Peter Gunnar" },
+  { src: "images/alice/alice-gallery-3.jpg", alt: "Alice Gallery 3", credit: "© Peter Gunnar" },
+  { src: "images/alice/alice-gallery-4.jpg", alt: "Alice Gallery 4", credit: "© Peter Gunnar" },
+  { src: "images/alice/alice-gallery-5.jpg", alt: "Alice Gallery 5", credit: "© Peter Gunnar" },
 ];
 ---
 
 <ShowLayout title="Alice - Dancing Through Life">
-  <ShowBanner image="images/alice-banner.jpg" title="ALICE" year="2024" credit="© Peter Gunnar" />
+  <ShowBanner image="images/alice/alice-banner.jpg" title="ALICE" year="2024" credit="© Peter Gunnar" />
 
-  <ShowSynopsis poster="images/alice.png" posterAlt="Affiche du spectacle Alice">
+  <ShowSynopsis poster="images/alice/alice.png" posterAlt="Affiche du spectacle Alice">
     <p>
       Alice est un jukebox musical contemporain qui réinvente le classique
       de Lewis Carroll, Alice au Pays des Merveilles. Cette version moderne
