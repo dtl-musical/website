@@ -2,19 +2,11 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 40px 20px;
-  font-family: "Roboto", sans-serif;
 }
 
 .ticket-header {
   text-align: center;
   margin-bottom: 40px;
-}
-
-.back-link {
-  display: inline-block;
-  margin-bottom: 20px;
-  color: var(--primary-color);
-  font-weight: bold;
 }
 
 .ticket-header h1 {
@@ -66,7 +58,7 @@
   flex-wrap: wrap;
   gap: 15px;
   padding: 10px 0;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid var(--border-color);
 }
 
 .date {
@@ -103,7 +95,7 @@
   display: flex;
   justify-content: space-between;
   padding: 10px 0;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid var(--border-color);
 }
 
 .ticket-info h4 {
@@ -114,7 +106,7 @@
 .ticket-info p {
   margin: 5px 0 0;
   font-size: 0.9rem;
-  color: #666;
+  color: var(--muted);
 }
 
 .ticket-price {
@@ -132,7 +124,7 @@
   padding: 15px 30px;
   font-size: 18px;
   background-color: var(--primary-color);
-  color: #fff;
+  color: var(--light-text);
   text-decoration: none;
   border-radius: 5px;
 }

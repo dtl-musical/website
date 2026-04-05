@@ -8,14 +8,13 @@ import '../styles/show.css';
 interface Props {
   title: string;
   description?: string;
-  style?: string;
 }
 
-const { title, description, style } = Astro.props;
+const { title, description } = Astro.props;
 ---
 
 <BaseLayout title={title} description={description}>
-  <div class="show-page" style={style}>
+  <div class="show-page">
     <Header />
     <slot />
     <Footer />
