@@ -1,12 +1,14 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
 import '../styles/donation.css';
 ---
 
 <BaseLayout title="Faire un don - Dancing Through Life">
+  <Header />
   <div class="donation-page">
     <div class="donation-header">
-      <a href="index.html" class="back-link">← Retour à l'accueil</a>
       <h1>Soutenez Dancing Through Life</h1>
     </div>
 
@@ -39,4 +41,5 @@ import '../styles/donation.css';
       </div>
     </div>
   </div>
+  <Footer />
 </BaseLayout>

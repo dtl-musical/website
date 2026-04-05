@@ -1,12 +1,14 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
 import '../styles/billetterie.css';
 ---
 
 <BaseLayout title="Billetterie - Dancing Through Life">
+  <Header />
   <div class="ticket-page">
     <div class="ticket-header">
-      <a href="index.html" class="back-link">← Retour à l'accueil</a>
       <h1>Billetterie</h1>
     </div>
 
@@ -78,4 +80,5 @@ import '../styles/billetterie.css';
       </a>
     </div>
   </div>
+  <Footer />
 </BaseLayout>
