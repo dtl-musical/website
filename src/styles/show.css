@@ -164,6 +164,15 @@
   .show-container {
     flex-direction: column;
     align-items: center;
+    margin: 40px 20px;
+  }
+
+  .show-info {
+    padding: 20px 10px;
+  }
+
+  .show-buttons-container {
+    margin: 20px 0;
   }
 
   .gallery-container {
