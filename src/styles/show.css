@@ -38,7 +38,6 @@
   padding: 60px 0;
   background-color: var(--background-light);
   text-align: center;
-  font-family: "Roboto", sans-serif;
 }
 
 .show-container {
@@ -109,7 +108,6 @@
   padding: 60px 0;
   background-color: var(--background-dark);
   color: var(--light-text);
-  font-family: "Roboto", sans-serif;
 }
 
 .distribution-text {
@@ -123,7 +121,6 @@
   padding: 60px 0;
   background-color: var(--background-light);
   border-top: 1px solid #eee;
-  font-family: "Roboto", sans-serif;
 }
 
 .gallery-carousel {

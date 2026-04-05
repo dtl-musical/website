@@ -1,7 +1,6 @@
 .banner {
   background-image: url("images/apnee/apnee-banner-2.jpg");
   color: var(--light-text);
-  font-family: "Roboto", sans-serif;
 }
 
 #current-show .show-poster img {
@@ -25,7 +24,6 @@
   padding: 60px 0;
   background-color: var(--background-dark);
   color: var(--light-text);
-  font-family: "Roboto", sans-serif;
 }
 
 .info-container {
@@ -92,7 +90,6 @@
 .about {
   padding: 60px 0;
   background-color: var(--background-light);
-  font-family: "Roboto", sans-serif;
 }
 
 .about-container {
@@ -151,7 +148,6 @@
   padding: 60px 0;
   background-color: var(--background-light);
   border-top: 1px solid #eee;
-  font-family: "Roboto", sans-serif;
 }
 
 .partners-carousel {
