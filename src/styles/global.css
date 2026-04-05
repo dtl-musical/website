@@ -13,6 +13,8 @@
     --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.1);
     --shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
     --muted: #666;
+    --border-color: #eee;
+    --footer-accent: #ffcc00;
   }
 
   * {
@@ -99,7 +101,7 @@
 
   .donation-text {
     font-weight: bold;
-    color: #000;
+    color: var(--text-color);
   }
 
   @media (max-width: 768px) {
@@ -190,7 +192,7 @@
   /* Footer styles */
   .footer {
     margin-top: auto;
-    background-color: #5c1c0d;
+    background-color: var(--primary-color);
     color: white;
     padding: 40px 20px;
     padding-bottom: 0px;
@@ -235,7 +237,7 @@
   }
 
   .footer-column a:hover {
-    color: #ffcc00;
+    color: var(--footer-accent);
   }
 
   .social-icons {
@@ -256,7 +258,7 @@
   }
 
   .footer-bottom {
-    border-top: 1px solid #ffcc00;
+    border-top: 1px solid var(--footer-accent);
     margin-top: 20px;
     padding-top: 10px;
     font-size: 0.85rem;
@@ -269,7 +271,7 @@
   }
 
   .footer-bottom a:hover {
-    color: #ffcc00;
+    color: var(--footer-accent);
   }
 
   .footer-logo img {

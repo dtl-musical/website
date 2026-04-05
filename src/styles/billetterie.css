@@ -58,7 +58,7 @@
   flex-wrap: wrap;
   gap: 15px;
   padding: 10px 0;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid var(--border-color);
 }
 
 .date {
@@ -95,7 +95,7 @@
   display: flex;
   justify-content: space-between;
   padding: 10px 0;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid var(--border-color);
 }
 
 .ticket-info h4 {
@@ -106,7 +106,7 @@
 .ticket-info p {
   margin: 5px 0 0;
   font-size: 0.9rem;
-  color: #666;
+  color: var(--muted);
 }
 
 .ticket-price {
@@ -124,7 +124,7 @@
   padding: 15px 30px;
   font-size: 18px;
   background-color: var(--primary-color);
-  color: #fff;
+  color: var(--light-text);
   text-decoration: none;
   border-radius: 5px;
 }
