@@ -160,6 +160,10 @@
 }
 
 @media (max-width: 768px) {
+  .banner h1 {
+    font-size: 1.5rem;
+  }
+
   .show-container {
     flex-direction: column;
     align-items: center;
