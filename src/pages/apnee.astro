@@ -5,6 +5,27 @@ import ShowSynopsis from '../components/show/ShowSynopsis.astro';
 import ShowDistribution from '../components/show/ShowDistribution.astro';
 import ShowGallery from '../components/show/ShowGallery.astro';
 import ShowVideo from '../components/show/ShowVideo.astro';
+import TroopPhotos from '../components/show/TroopPhotos.astro';
+
+const firstYearStudents = [
+  { src: "images/apnee/troop-emilie.jpg", alt: "Emilie - Lucie Clemot", role: "Emilie", actor: "Lucie Clemot" },
+  { src: "images/apnee/troop-gabriel.jpg", alt: "Gabriel - Teva Pouillet", role: "Gabriel", actor: "Teva Pouillet" },
+  { src: "images/apnee/troop-salome.jpg", alt: "Salome - Faustine Malatray", role: "Salome", actor: "Faustine Malatray" },
+  { src: "images/apnee/troop-arthur.jpg", alt: "Arthur - Naoufal Alami Hassani", role: "Arthur", actor: "Naoufal Alami Hassani" },
+  { src: "images/apnee/troop-daphnee.jpg", alt: "Daphnee - Juliette Ferragu", role: "Daphnee", actor: "Juliette Ferragu" },
+  { src: "images/apnee/troop-louis.jpg", alt: "Louis - Achille Huet", role: "Louis", actor: "Achille Huet" },
+  { src: "images/apnee/troop-heloise.jpg", alt: "Heloise - Sophie Lejeune", role: "Heloise", actor: "Sophie Lejeune" },
+];
+const secondYearStudents = [
+  { src: "images/apnee/troop-lili.jpg", alt: "Lili - Marianne Clary", role: "Lili", actor: "Marianne Clary" },
+  { src: "images/apnee/troop-theo.jpg", alt: "Théo - Maxime Archambault", role: "Théo", actor: "Maxime Archambault" },
+  { src: "images/apnee/troop-clemence.jpg", alt: "Clemence - Elise Desbordes", role: "Clemence", actor: "Elise Desbordes" },
+  { src: "images/apnee/troop-margot.jpg", alt: "Margot - Pauline Fredouelle Volokh", role: "Margot", actor: "Pauline Fredouelle Volokh" },
+  { src: "images/apnee/troop-bastien.jpg", alt: "Bastien - Yanis Trouyet", role: "Bastien", actor: "Yanis Trouyet" },
+  { src: "images/apnee/troop-emmanuelle.jpg", alt: "Emmanuelle - Elise Devey", role: "Emmanuelle", actor: "Elise Devey" },
+  { src: "images/apnee/troop-mr-mayer.jpg", alt: "Mr. Mayer - Gautier Creutzer", role: "Mr. Mayer", actor: "Gautier Creutzer" },
+  { src: "images/apnee/troop-mr-atibe.jpg", alt: "Mr. Atibe - Mehdi Reuillon", role: "Mr. Atibe", actor: "Mehdi Reuillon" },
+];
 
 const galleryPhotos = [
   { src: "images/apnee/apnee-gallery-1.jpg", alt: "Apnée Gallery 1", credit: "© Peter Gunnar" },
@@ -38,10 +59,14 @@ const galleryPhotos = [
   <ShowVideo url="https://youtube.com/embed/ScjZBHD_1ZU?si=m3yK289BL9YUTLYs" title="Apnée - Trailer" />
 
   <ShowDistribution>
-    <p><strong>Sur scène :</strong> Lucie Clemot, Marianne Clary, Teva Pouillet,
-      Maxime Archambault, Faustine Malatray, Naoufal Alami Hassani, Juliette Ferragu,
-      Achille Huet, Sophie Lejeune, Pauline Fredouelle Volokh, Yanis Trouyet,
-      Mehdi Reuillon, Gautier Creutzer, Elise Desbordes, Elise Devey, Anaëlle Breton,
+    <div slot="before-text" style="max-width: 80%; margin: 0 auto;">
+      <h3 class="troop-section-title">Elèves - 1ère année</h3><br />
+      <TroopPhotos maxPerRow={5} minWidth={120} members={firstYearStudents} />
+      <h3 class="troop-section-title">Elèves - 2ème année</h3><br />
+      <TroopPhotos maxPerRow={5} minWidth={120} members={secondYearStudents} />
+    </div>
+    
+    <p><strong>Sur scène :</strong> Anaëlle Breton,
       Hugo Goasdoué, Suzanne Martin, Lisa Mollo, Alix Planchon, Iona Serquin,
       Valentine Derue, Floriane Dieuleveut, Martha Dro, Claire Helaine, Mario Liere,
       Fanny Mathieu, Freddy Phung et Yassine Terrab</p>
@@ -68,24 +93,6 @@ const galleryPhotos = [
       Vice-trésorière : Fanny Mathieu</p>
 
     </ShowDistribution>
-
-    <div class="troop-image-container">
-      <div class="troop-image-item">
-        <img src="images/apnee/troupe-louis.jpeg" alt="Louis - Achille Huet" class="troop-image" />
-        <p class="role-name">Louis</p>
-        <p class="actor-name">Achille Huet</p>
-      </div>
-      <img src="images/apnee/troupe-louis.jpeg" alt="Louis - Achille Huet" class="troop-image" />
-      <img src="images/apnee/troupe-louis.jpeg" alt="Louis - Achille Huet" class="troop-image" />
-      <img src="images/apnee/troupe-louis.jpeg" alt="Louis - Achille Huet" class="troop-image" />
-      <img src="images/apnee/troupe-louis.jpeg" alt="Louis - Achille Huet" class="troop-image" />
-      <img src="images/apnee/troupe-louis.jpeg" alt="Louis - Achille Huet" class="troop-image" />
-      <img src="images/apnee/troupe-louis.jpeg" alt="Louis - Achille Huet" class="troop-image" />
-      <img src="images/apnee/troupe-louis.jpeg" alt="Louis - Achille Huet" class="troop-image" />
-      <img src="images/apnee/troupe-louis.jpeg" alt="Louis - Achille Huet" class="troop-image" />
-      <img src="images/apnee/troupe-louis.jpeg" alt="Louis - Achille Huet" class="troop-image" />
-      <img src="images/apnee/troupe-louis.jpeg" alt="Louis - Achille Huet" class="troop-image" />
-    </div>
 
   <ShowGallery photos={galleryPhotos} />
 </ShowLayout>

@@ -1,0 +1,27 @@
+---
+interface Props {
+  maxPerRow: number;
+  minWidth: number;
+  members: {
+    src: string;
+    alt: string;
+    role: string;
+    actor: string;
+  }[];
+}
+
+const { maxPerRow, minWidth, members } = Astro.props;
+---
+
+<div
+  class="troop-photos"
+  style={`--max-per-row: ${maxPerRow}; --min-width: ${minWidth}px;`}
+>
+  {members.map((member) => (
+    <div class="troop-photos-item">
+      <img src={member.src} alt={member.alt} class="troop-image" />
+      <p class="troop-photos-role">{member.role}</p>
+      <p class="troop-photos-actor">{member.actor}</p>
+    </div>
+  ))}
+</div>

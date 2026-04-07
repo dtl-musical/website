@@ -119,26 +119,47 @@
   padding: 0 20px;
 }
 
-.troop-image-container {
+.troop-section-title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.3rem;
+  margin: 30px 0 10px;
+}
+
+.troop-photos {
+  --gap: 30px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
-  gap: 30px;
-  margin: 20px 0;
+  gap: var(--gap);
+  margin: 20px auto;
+  padding: 0 20px;
 }
 
-.troop-image-item {
+.troop-photos-item {
+  flex: 0 0 auto;
+  width: calc((100% - (var(--max-per-row) - 1) * var(--gap)) / var(--max-per-row));
+  min-width: var(--min-width);
   text-align: center;
 }
 
-.role-name {
-  font-size: 1.2rem;
-  font-weight: bold;
+.troop-photos-item .troop-image {
+  width: 100%;
+  max-width: none;
+  aspect-ratio: 1;
+  object-fit: cover;
 }
 
-.actor-name {
-  font-size: 1rem;
+.troop-photos-role {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-top: 8px;
+  margin-bottom: 0;
+}
+
+.troop-photos-actor {
+  font-size: 0.95rem;
+  margin-top: 2px;
 }
 
 .troop-image {
